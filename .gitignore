@@ -1,0 +1,7 @@
+# at article-generator/.gitignore
+*.env
+/backend/.env
+**/desktop.ini
+node_modules/
+frontend/node_modules/
+__pycache__/
