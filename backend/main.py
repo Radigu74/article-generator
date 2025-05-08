@@ -6,10 +6,10 @@ from fastapi import FastAPI, Depends, Request
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
-from backend.auth import api_key_auth
-from backend.crud import log_usage
-from backend.models import Base
-from backend.schemas import TopicRequest, ArticleRequest
+from auth import api_key_auth
+from crud import log_usage
+from models import Base
+from schemas import TopicRequest, ArticleRequest
 
 # ─── Load and Override .env ─────────────────────────────────────────────────
 env_path = find_dotenv()
