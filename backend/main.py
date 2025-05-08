@@ -1,12 +1,10 @@
 import os
 from dotenv import load_dotenv, find_dotenv
 import openai
-
 from fastapi import FastAPI, Depends, Request
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-
-from auth import api_key_auth
+from backend.auth import api_key_auth
 from crud import log_usage
 from models import Base
 from schemas import TopicRequest, ArticleRequest
