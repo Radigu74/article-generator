@@ -1,5 +1,5 @@
 from sqlalchemy.orm import Session
-from models import Client, Usage
+from backend.models import Topic, Article
 
 def get_client_by_key(db: Session, key: str):
     return db.query(Client).filter(Client.api_key == key).first()
