@@ -1,5 +1,5 @@
 from fastapi import Request, HTTPException
-from backend.crud import get_client_by_key
+from crud import get_client_by_key
 
 async def api_key_auth(request: Request, db):
     key = request.headers.get("X-API-KEY")
