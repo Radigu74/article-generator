@@ -4,7 +4,7 @@ import openai
 from fastapi import FastAPI, Depends, Request
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from backend.auth 
+from auth 
 from crud import log_usage
 from models import Base
 from schemas import TopicRequest, ArticleRequest
